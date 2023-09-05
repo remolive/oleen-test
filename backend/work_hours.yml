@@ -1,0 +1,21 @@
+- allowDayAndTime: # horaires de travail
+  # day est compris dans [1..7]
+  # start/end : [00:00 .. 23:59]
+  - day: 1 # lundi
+    start: "08:00"
+    end: "12:00"
+  - day: 1 # lundi
+    start: "13:00"
+    end: "17:30"
+  - day: 2 # mardi
+    start: "08:30"
+    end: "13:00"
+  - day: 2 # mardi
+    start: "14:00"
+    end: "18:00"
+- blockSlot: # vacances
+  - start: "2021-02-28"
+    end: "2021-03-01"
+- allowSlot: # permanences du samedi
+  - start: "2021-03-06T08:00:00Z"
+    end: "2021-03-06T16:00:00Z"
